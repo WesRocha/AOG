@@ -1,5 +1,11 @@
+import 'package:aog/pages/home.page.dart';
+import 'package:aog/widgets/input.widget.dart';
+import 'package:aog/widgets/loading-button-widget.dart';
 import 'package:aog/widgets/logo.widget.dart';
+import 'package:aog/widgets/submit.widget.dart';
+import 'package:aog/widgets/success.widget.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_masked_text/flutter_masked_text.dart';
 
 void main() => runApp(MyApp());
 
@@ -10,31 +16,9 @@ class MyApp extends StatelessWidget {
       title: 'Alcool ou Gasolina',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.deepPurple,
+        primarySwatch: Colors.orange,
       ),
       home: HomePage(),
-    );
-  }
-}
-
-class HomePage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Theme.of(context).primaryColor,
-      body: ListView(
-        children: <Widget>[
-          Logo(),
-          TextFormField(
-            keyboardType: TextInputType.number,
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: 45,
-              fontFamily: "Big Shoulders Display",
-            ),
-          ),
-        ],
-      ),
     );
   }
 }
