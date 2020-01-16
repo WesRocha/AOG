@@ -10,7 +10,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  Color _color = Colors.deepPurple;
+  Color _color = Colors.orange;
   var _gasCtrl = new MoneyMaskedTextController();
   var _alcCtrl = new MoneyMaskedTextController();
   var _busy = false;
