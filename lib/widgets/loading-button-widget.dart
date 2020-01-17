@@ -28,12 +28,13 @@ class LoadingButton extends StatelessWidget {
             height: 60,
             width: double.infinity,
             decoration: BoxDecoration(
-                color: invert
-                    ? Theme.of(context).primaryColor
-                    : Colors.white.withOpacity(0.8),
-                borderRadius: BorderRadius.circular(
-                  60,
-                )),
+              color: invert
+                  ? Theme.of(context).primaryColor
+                  : Colors.white.withOpacity(0.8),
+              borderRadius: BorderRadius.circular(
+                60,
+              ),
+            ),
             child: FlatButton(
               child: Text(
                 text,
